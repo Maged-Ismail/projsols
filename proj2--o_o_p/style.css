@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: fantasy;
+}
+
+#container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #222222;
+}
+
+#board {
+  position: relative;
+}
+
+#board > h1 {
+  color: #fff;
+}
+
+.row {
+  display: flex;
+}
+
+.row > img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  object-position: center;
+  background: url('imgs/environment/grass1.png');
+}
+
+#action-cam {
+  background: #fff;
+  border-radius: 5px;
+}
+
+#action-cam img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.action-view {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.action-view:first-child {
+  border-bottom: 2px solid #ddd;
+}
+
+.action-view h3,
+.action-view h4 {
+  margin: 0;
+}
+
+#action-menu {
+  text-align: center;
+}
+
+#action-menu > div {
+  max-height: 300px;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+#action-menu button {
+  display: block;
+  width: 80%;
+  padding: 5px;
+  margin: 10px auto;
+}
